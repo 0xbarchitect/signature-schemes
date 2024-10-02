@@ -1,7 +1,11 @@
 import matplotlib.pyplot as plt
-from py_ecc.bn128 import G1, multiply, neg
+from py_ecc.bn128 import G1, multiply, neg, curve_order, field_modulus
 import math
 import numpy as np
+
+print(f"curve order: {curve_order}")
+print(f"field modulus: {field_modulus}")
+
 xs = []
 ys = []
 for i in range(1,1000):
