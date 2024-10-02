@@ -1,4 +1,4 @@
-# signature-schemes
+# Signature schemes
 The experiment code for prevalant signature schemes, including BLS, ECDSA and EdDSA.
 
 ## Prerequisites
@@ -11,4 +11,12 @@ The experiment code for prevalant signature schemes, including BLS, ECDSA and Ed
 
 ```sh
 $ pip install -r requirement.txt
+```
+
+## Run
+
+- Run script
+
+```sh
+$ python <script>.py
 ```
