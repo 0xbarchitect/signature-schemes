@@ -31,6 +31,7 @@ x2G, y2G = point_addition(Gx, Gy, Gx, Gy, p)
 x3, y3 = point_addition(Gx, Gy, x2G, y2G, p)
 
 # Verify the result is on the curve
+print(f"G: ({Gx}, {Gy})")
 print(f"2G: ({x2G}, {y2G})")
 print(f"G + 2G: ({x3}, {y3})")
 print(f"Is (G + 2G) on the curve? {is_on_curve(x3, y3, a, b, p)}")
