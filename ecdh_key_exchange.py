@@ -25,7 +25,7 @@ print("Shared secret:", shared_secret_a)
 message = b"This is a secret message."
 
 # Derive a 256-bit AES key from the shared secret using SHA-256
-shared_secret_bytes = bytes(shared_secret_a[0]) + bytes(shared_secret_a[1])
+shared_secret_bytes = shared_secret_a[0].to_bytes(32, byteorder='big') + shared_secret_a[1].to_bytes(32, byteorder='big')
 aes_key = hashlib.sha256(shared_secret_bytes).digest()
 
 # Encrypt the message using AES
