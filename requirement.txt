@@ -1,3 +1,5 @@
 libnum==1.7.1
 matplotlib==3.9.2
 py_ecc==7.0.1
+crypto==1.4.1
+pycryptodome==3.21.0
