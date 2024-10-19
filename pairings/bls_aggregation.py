@@ -18,4 +18,4 @@ aggregated_signature = bls.Aggregate(signatures)
 # Verify the aggregated signature
 is_valid = bls.AggregateVerify(public_keys, messages, aggregated_signature)
 
-print(f"Aggregated signature valid: {is_valid}")
+#print(f"Aggregated signature valid: {is_valid}")
