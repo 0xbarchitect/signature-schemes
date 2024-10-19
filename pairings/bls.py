@@ -17,8 +17,8 @@ signature = bls.Sign(private_key, message)
 # Verify the signature
 is_valid = bls.Verify(public_key, message, signature)
 
-#print(f"Private Key: {private_key}")
-#print(f"Public Key: {public_key}")
-#print(f"Message: {message}")
-#print(f"Signature: {signature}")
-#print(f"Signature valid: {is_valid}")
+print(f"Private Key: {private_key}")
+print(f"Public Key: {public_key}")
+print(f"Message: {message}")
+print(f"Signature: {signature}")
+print(f"Signature valid: {is_valid}")
