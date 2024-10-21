@@ -49,7 +49,7 @@ if __name__ == "__main__":
   #commitment = kzg.commit(polynomial)
   #x = 5
   #y, proof = kzg.open(polynomial, x)
-  is_valid = kzg.verify(commitment, x, y, proof)
+  #is_valid = kzg.verify(commitment, x, y, proof)
 
   print(f"Commitment: {commitment}")
   print(f"Evaluation at x={x}: {y}")
