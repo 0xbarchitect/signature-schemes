@@ -46,7 +46,7 @@ if __name__ == "__main__":
   #polynomial = Polynomial([1, 2, 3, 4])
   #kzg = KZGCommitmentScheme(secret, degree)
 
-  commitment = kzg.commit(polynomial)
+  #commitment = kzg.commit(polynomial)
   x = 5
   y, proof = kzg.open(polynomial, x)
   is_valid = kzg.verify(commitment, x, y, proof)
