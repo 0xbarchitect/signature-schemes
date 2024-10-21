@@ -41,17 +41,17 @@ class KZGCommitmentScheme:
 
 # Example usage
 if __name__ == "__main__":
-  #secret = 123456789
-  #degree = 3
-  #polynomial = Polynomial([1, 2, 3, 4])
-  #kzg = KZGCommitmentScheme(secret, degree)
+  secret = 123456789
+  degree = 3
+  polynomial = Polynomial([1, 2, 3, 4])
+  kzg = KZGCommitmentScheme(secret, degree)
 
-  #commitment = kzg.commit(polynomial)
-  #x = 5
-  #y, proof = kzg.open(polynomial, x)
-  #is_valid = kzg.verify(commitment, x, y, proof)
+  commitment = kzg.commit(polynomial)
+  x = 5
+  y, proof = kzg.open(polynomial, x)
+  is_valid = kzg.verify(commitment, x, y, proof)
 
-  #print(f"Commitment: {commitment}")
-  #print(f"Evaluation at x={x}: {y}")
-  #print(f"Proof: {proof}")
-  #print(f"Verification: {'valid' if is_valid else 'invalid'}")
+  print(f"Commitment: {commitment}")
+  print(f"Evaluation at x={x}: {y}")
+  print(f"Proof: {proof}")
+  print(f"Verification: {'valid' if is_valid else 'invalid'}")
