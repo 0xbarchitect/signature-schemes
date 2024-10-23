@@ -52,6 +52,6 @@ if __name__ == "__main__":
   is_valid = kzg.verify(commitment, x, y, proof)
 
   print(f"Commitment: {commitment}")
-  # print(f"Evaluation at x={x}: {y}")
-  # print(f"Proof: {proof}")
-  # print(f"Verification: {'valid' if is_valid else 'invalid'}")
+  print(f"Evaluation at x={x}: {y}")
+  print(f"Proof: {proof}")
+  print(f"Verification: {'valid' if is_valid else 'invalid'}")
