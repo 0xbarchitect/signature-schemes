@@ -42,7 +42,7 @@ class KZGCommitmentScheme:
 # Example usage
 if __name__ == "__main__":
   secret = 123456789
-  # degree = 3
+  degree = 3
   # polynomial = Polynomial([1, 2, 3, 4])
   # kzg = KZGCommitmentScheme(secret, degree)
 
