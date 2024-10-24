@@ -27,7 +27,7 @@ class MerkleTree:
     for layer in self.tree[:-1]:
       sibling_index = index ^ 1
       if sibling_index < len(layer):
-  #       proof.append(layer[sibling_index])
+        proof.append(layer[sibling_index])
   #     index //= 2
   #   return proof
 
