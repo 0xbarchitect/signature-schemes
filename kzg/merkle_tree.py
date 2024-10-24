@@ -31,7 +31,7 @@ class MerkleTree:
       index //= 2
     return proof
 
-  # def verify_proof(self, leaf, proof, root):
+  def verify_proof(self, leaf, proof, root):
   #   computed_hash = self._hash(leaf)
   #   for sibling in proof:
   #     if computed_hash < sibling:
