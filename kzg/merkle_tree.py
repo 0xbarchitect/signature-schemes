@@ -34,7 +34,7 @@ class MerkleTree:
   def verify_proof(self, leaf, proof, root):
     computed_hash = self._hash(leaf)
     for sibling in proof:
-  #     if computed_hash < sibling:
+      if computed_hash < sibling:
   #       computed_hash = self._hash(computed_hash + sibling)
   #     else:
   #       computed_hash = self._hash(sibling + computed_hash)
