@@ -28,8 +28,8 @@ class MerkleTree:
       sibling_index = index ^ 1
       if sibling_index < len(layer):
         proof.append(layer[sibling_index])
-  #     index //= 2
-  #   return proof
+      index //= 2
+    return proof
 
   # def verify_proof(self, leaf, proof, root):
   #   computed_hash = self._hash(leaf)
