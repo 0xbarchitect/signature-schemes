@@ -22,7 +22,7 @@ class MerkleTree:
   def get_root(self):
     return self.tree[-1][0]
 
-  # def get_proof(self, index):
+  def get_proof(self, index):
   #   proof = []
   #   for layer in self.tree[:-1]:
   #     sibling_index = index ^ 1
