@@ -38,7 +38,7 @@ class MerkleTree:
         computed_hash = self._hash(computed_hash + sibling)
       else:
         computed_hash = self._hash(sibling + computed_hash)
-  #   return computed_hash == root
+    return computed_hash == root
 
 # Example usage:
 leaves = ['a', 'b', 'c', 'd']
