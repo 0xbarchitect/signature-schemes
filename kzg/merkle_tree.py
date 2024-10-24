@@ -25,7 +25,7 @@ class MerkleTree:
   def get_proof(self, index):
     proof = []
     for layer in self.tree[:-1]:
-  #     sibling_index = index ^ 1
+      sibling_index = index ^ 1
   #     if sibling_index < len(layer):
   #       proof.append(layer[sibling_index])
   #     index //= 2
