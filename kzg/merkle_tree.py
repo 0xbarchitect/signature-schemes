@@ -22,23 +22,23 @@ class MerkleTree:
   def get_root(self):
     return self.tree[-1][0]
 
-  def get_proof(self, index):
-    proof = []
-    for layer in self.tree[:-1]:
-      sibling_index = index ^ 1
-      if sibling_index < len(layer):
-        proof.append(layer[sibling_index])
-      index //= 2
-    return proof
+  # def get_proof(self, index):
+  #   proof = []
+  #   for layer in self.tree[:-1]:
+  #     sibling_index = index ^ 1
+  #     if sibling_index < len(layer):
+  #       proof.append(layer[sibling_index])
+  #     index //= 2
+  #   return proof
 
-  def verify_proof(self, leaf, proof, root):
-    computed_hash = self._hash(leaf)
-    for sibling in proof:
-      if computed_hash < sibling:
-        computed_hash = self._hash(computed_hash + sibling)
-      else:
-        computed_hash = self._hash(sibling + computed_hash)
-    return computed_hash == root
+  # def verify_proof(self, leaf, proof, root):
+  #   computed_hash = self._hash(leaf)
+  #   for sibling in proof:
+  #     if computed_hash < sibling:
+  #       computed_hash = self._hash(computed_hash + sibling)
+  #     else:
+  #       computed_hash = self._hash(sibling + computed_hash)
+  #   return computed_hash == root
 
 # Example usage:
 leaves = ['a', 'b', 'c', 'd']
