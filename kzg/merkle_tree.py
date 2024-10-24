@@ -32,7 +32,7 @@ class MerkleTree:
     return proof
 
   def verify_proof(self, leaf, proof, root):
-  #   computed_hash = self._hash(leaf)
+    computed_hash = self._hash(leaf)
   #   for sibling in proof:
   #     if computed_hash < sibling:
   #       computed_hash = self._hash(computed_hash + sibling)
