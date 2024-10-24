@@ -37,7 +37,7 @@ class MerkleTree:
       if computed_hash < sibling:
         computed_hash = self._hash(computed_hash + sibling)
       else:
-  #       computed_hash = self._hash(sibling + computed_hash)
+        computed_hash = self._hash(sibling + computed_hash)
   #   return computed_hash == root
 
 # Example usage:
