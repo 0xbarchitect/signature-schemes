@@ -34,8 +34,8 @@ if __name__ == "__main__":
   commitment = kzg_commitment(polynomial, g1)
   print("KZG Commitment:", commitment)
 
-  # # Generate KZG proof
-  # proof = kzg_proof(polynomial, x, g1)
+  # Generate KZG proof
+  proof = kzg_proof(polynomial, x, g1)
   # print("KZG Proof:", proof)
 
   # # Aggregate multiple proofs
