@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
   # Generate KZG commitment
   commitment = kzg_commitment(polynomial, g1)
-  # print("KZG Commitment:", commitment)
+  print("KZG Commitment:", commitment)
 
   # # Generate KZG proof
   # proof = kzg_proof(polynomial, x, g1)
