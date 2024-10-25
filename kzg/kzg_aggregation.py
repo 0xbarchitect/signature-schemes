@@ -26,19 +26,19 @@ def aggregate_kzg_proofs(proofs):
 # Example usage
 if __name__ == "__main__":
   # Example polynomial coefficients
-  polynomial = [FQ(1), FQ(2), FQ(3)]  # Represents 1 + 2x + 3x^2
-  x = FQ(5)
-  g1 = bn128.G1
+  # polynomial = [FQ(1), FQ(2), FQ(3)]  # Represents 1 + 2x + 3x^2
+  # x = FQ(5)
+  # g1 = bn128.G1
 
-  # Generate KZG commitment
-  commitment = kzg_commitment(polynomial, g1)
-  print("KZG Commitment:", commitment)
+  # # Generate KZG commitment
+  # commitment = kzg_commitment(polynomial, g1)
+  # print("KZG Commitment:", commitment)
 
-  # Generate KZG proof
-  proof = kzg_proof(polynomial, x, g1)
-  print("KZG Proof:", proof)
+  # # Generate KZG proof
+  # proof = kzg_proof(polynomial, x, g1)
+  # print("KZG Proof:", proof)
 
-  # Aggregate multiple proofs
-  proofs = [proof, proof]  # Example with two identical proofs
-  aggregated_proof = aggregate_kzg_proofs(proofs)
-  print("Aggregated KZG Proof:", aggregated_proof)
+  # # Aggregate multiple proofs
+  # proofs = [proof, proof]  # Example with two identical proofs
+  # aggregated_proof = aggregate_kzg_proofs(proofs)
+  # print("Aggregated KZG Proof:", aggregated_proof)
