@@ -28,7 +28,7 @@ if __name__ == "__main__":
   # Example polynomial coefficients
   polynomial = [FQ(1), FQ(2), FQ(3)]  # Represents 1 + 2x + 3x^2
   x = FQ(5)
-  # g1 = bn128.G1
+  g1 = bn128.G1
 
   # # Generate KZG commitment
   # commitment = kzg_commitment(polynomial, g1)
