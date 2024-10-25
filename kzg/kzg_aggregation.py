@@ -38,7 +38,7 @@ if __name__ == "__main__":
   proof = kzg_proof(polynomial, x, g1)
   print("KZG Proof:", proof)
 
-  # # Aggregate multiple proofs
-  # proofs = [proof, proof]  # Example with two identical proofs
+  # Aggregate multiple proofs
+  proofs = [proof, proof]  # Example with two identical proofs
   # aggregated_proof = aggregate_kzg_proofs(proofs)
   # print("Aggregated KZG Proof:", aggregated_proof)
