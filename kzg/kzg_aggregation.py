@@ -30,8 +30,8 @@ if __name__ == "__main__":
   x = FQ(5)
   g1 = bn128.G1
 
-  # # Generate KZG commitment
-  # commitment = kzg_commitment(polynomial, g1)
+  # Generate KZG commitment
+  commitment = kzg_commitment(polynomial, g1)
   # print("KZG Commitment:", commitment)
 
   # # Generate KZG proof
