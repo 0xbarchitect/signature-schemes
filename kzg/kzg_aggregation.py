@@ -40,5 +40,5 @@ if __name__ == "__main__":
 
   # Aggregate multiple proofs
   proofs = [proof, proof]  # Example with two identical proofs
-  # aggregated_proof = aggregate_kzg_proofs(proofs)
+  aggregated_proof = aggregate_kzg_proofs(proofs)
   # print("Aggregated KZG Proof:", aggregated_proof)
